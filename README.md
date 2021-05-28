@@ -131,9 +131,31 @@ sua criatividade para estilizar de uma forma bonita e legal.
 
 Na seção das principais postagens (elemento `#posts-principais`),
 estilize cada `<article class="post">...</article>` de forma que o
-título da postagem fique sobreponha a imagem, em vez de ficar
+título da postagem sobreponha a imagem, em vez de ficar
 abaixo. Além da posição, coloque um fundo semitransparente (tipo
 `background-color: rgba(255, 255, 255, 0.5);`) para tornar legível.
+
+![Imagem de uma postagem com o título acima da imagem, ancorado na parte de cima, com um fundo branco semitransparente](imgs/statement/titulos-nas-imagens.png)
+
+
+OPCIONAL: Em vez de ter o título sempre visível, faça com que o texto apareça
+apenas quando o mouse estiver em cima do `.post`, como no vídeo
+a seguir:
+
+Como eu fiz:
+
+- Os títulos (`.titulo`) dentro de `.post` que está nesta seção
+  (`#posts-principais`) possuem:
+  - `top: 20px`
+  - `opacity: 0`  
+- Quando o `.post` está em `:hover`, o `.titulo` tem:
+  - `top: 6px`
+  - `opacity: 1`
+
+Por fim, é possível fazer com que a `opacity` e o `top` variem
+lentamente entre (`0` e `1`) e (`20px` a `6px`), em vez de trocar
+o valor instantaneamente. Veja
+no [FAQ como configurar uma transição](#faq).
 
 ![Vídeo mostrando um usuário passando o mouse acima de uma postagem e o título aparecendo com uma transição](https://fegemo.github.io/cefet-front-end-large-assets/webp/assombrado-titulos-nas-imagens.webp)
 
@@ -181,31 +203,7 @@ podemos usar para estilizar qualquer elemento no momento em que o mouse
 paira sobre ele.
 
 
-## Exercício 9: título visível apenas no `:hover`
-
-Em vez de ter o título sempre visível, faça com que o texto apareça
-apenas quando o mouse estiver em cima do `.post`, como no vídeo
-a seguir:
-
-![](https://fegemo.github.io/cefet-front-end-large-assets/webp/assombrado-titulos-nas-imagens.webp)
-
-Como eu fiz:
-
-- Os títulos (`.titulo`) dentro de `.post` que está nesta seção
-  (`#posts-principais`) possuem:
-  - `top: 20px`
-  - `opacity: 0`  
-- Quando o `.post` está em `:hover`, o `.titulo` tem:
-  - `top: 6px`
-  - `opacity: 1`
-
-Por fim, é possível fazer com que a `opacity` e o `top` variem
-lentamente entre (`0` e `1`) e (`20px` a `6px`), em vez de trocar
-o valor instantaneamente. Veja
-no [FAQ como configurar uma transição](#faq).
-
-
-## Exercício 10: "nuvem de _tags_" grudenta
+## Exercício 9: "nuvem de _tags_" grudenta
 
 Existe um outro valor para a propriedade `position` chamado `sticky`
 (grudento). A ideia é não deixar que alguns elementos "saiam de vista"
