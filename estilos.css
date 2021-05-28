@@ -58,6 +58,9 @@ a:active {
   text-shadow: 1px 1px black;
 }
 
+#menu-de-navegacao ul {
+  margin-bottom: 0;
+}
 
 
 
