@@ -7,7 +7,7 @@ Um blog sobre o desconhecido.
 
 Você deve fazer algumas partes que faltam do blog assombrado.
 
-![O resultado final da prática](imgs/statement/resultado.webp)
+![O resultado final da prática exibindo a página do Blog Assombrado](imgs/statement/resultado.webp)
 
 
 ## Exercício 0: encurtar a duração do vídeo
@@ -57,8 +57,8 @@ ele ficou com mais e, como efeito indesejado, uma "coluna preta" apareceu à dir
 Consulte o _box model_ do elemento `#tags` e proponha uma alteração
 em seu CSS que o corrija, sem alterar nada sobre a imagem de fundo.
 
-![](imgs/statement/tags-com-erro.webp)
-![](imgs/statement/tags-corrigido.webp)
+![A seção de tags da página mostrando uma imagem de fundo ocupando quase todo espaço na horizontal, exceto por uma coluna preta à direita](imgs/statement/tags-com-erro.webp)
+![A mesma seção de tags, só que com a largura menor - o suficiente para ter o mesmo tamanho da imagem de fundo](imgs/statement/tags-corrigido.webp)
 
 
 ## Exercício 4: Formulário de "Inscreva-se!"
@@ -72,7 +72,7 @@ de campos de entrada com seus rótulos:
 1. Idem para "Aceito receber promoções" (✅)
 1. Botão "Inscrever" (que não fará nada)
 
-![](imgs/statement/rodape.webp)
+![Imagem de como o rodapé deve ficar mostrando os campos para o usuário se inscrever](imgs/statement/rodape.webp)
 
 Lembre-se dos [elementos de entrada e botões][entrada-e-botoes] nos slides.
 
@@ -88,7 +88,7 @@ originalmente posicionadas.
   para decidir se neste caso deve ser usado `static`, `relative`, `absolute`
   ou `fixed`.
 
-![](https://fegemo.github.io/cefet-front-end-large-assets/webp/assombrado-tags-como-botoes.webp)
+![Vídeo mostrando um usuário clicando nas tags e elas sendo levemente deslocadas durante o click](https://fegemo.github.io/cefet-front-end-large-assets/webp/assombrado-tags-como-botoes.webp)
 
 
 Além de alterar a posição das _tags_ quando clicadas, altere também o
@@ -135,14 +135,14 @@ título da postagem fique sobreponha a imagem, em vez de ficar
 abaixo. Além da posição, coloque um fundo semitransparente (tipo
 `background-color: rgba(255, 255, 255, 0.5);`) para tornar legível.
 
-![](https://fegemo.github.io/cefet-front-end-large-assets/webp/assombrado-titulos-nas-imagens.webp)
+![Vídeo mostrando um usuário passando o mouse acima de uma postagem e o título aparecendo com uma transição](https://fegemo.github.io/cefet-front-end-large-assets/webp/assombrado-titulos-nas-imagens.webp)
 
 
 ## Exercício 8: fantasmas **Boo**
 
-![](imgs/boo1.gif)
-![](imgs/boo2.gif)
-![](imgs/boo3.gif)
+![Fantasimnha com fome](imgs/boo1.gif)
+![Fantasminha com a boca aberta](imgs/boo2.gif)
+![Fantasminha com a língua pra fora](imgs/boo3.gif)
 
 Coloque alguns (por exemplo, 3) _boos_ do Super Mario para assombrar
 a página, ao final do `<main></main>` (logo antes da tag de
@@ -211,7 +211,7 @@ Existe um outro valor para a propriedade `position` chamado `sticky`
 (grudento). A ideia é não deixar que alguns elementos "saiam de vista"
 quando a página é rolada para baixo.
 
-![](https://fegemo.github.io/cefet-front-end-large-assets/webp/assombrado-nuvem-sticky.webp)
+![Vídeo mostrando usuário rolar a página para baixo e a nuvem de tags grudando no topo da página](https://fegemo.github.io/cefet-front-end-large-assets/webp/assombrado-nuvem-sticky.webp)
 
 Neste exercício, queremos deixar a nuvem de _tags_ (elemento `#tags`)
 grudenta, de forma que, quando a página rolar, ela acompanhe a
