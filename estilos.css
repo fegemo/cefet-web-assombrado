@@ -1,0 +1,258 @@
+body {
+  background-image: url(imgs/fundo-assombrado.jpg);
+  background-size: cover;
+  color: white;
+  margin: 0;
+  font-family: monospace;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Special Elite", cursive;
+}
+
+h2 {
+  font-family: "Aldrich", sans-serif;
+}
+
+h1 + h2 {
+  font-size: 100%;
+  margin-top: 0.5em;
+  color: silver;
+}
+
+a:link {
+  color: orange;
+}
+
+a:visited {
+  color: orange;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: red;
+}
+
+
+/* --- Cabeçalho --- */
+#cabecalho {
+  background-color: rgba(0, 0, 0, .95);
+  box-shadow: 2px 10px 10px rgba(0,0,0, .25);
+  padding-top: 1em;
+  text-align: center;
+}
+
+#cabecalho ul {
+  background-color: rgba(0, 204, 147, 0.53);
+}
+
+#cabecalho a {
+  text-decoration: none;
+  text-shadow: 1px 1px black;
+}
+
+
+
+
+/* --- Conteúdo principal da página --- */
+#conteudo-principal {
+  padding-left: 2.5%;
+  transition: opacity 1s linear;
+  padding-bottom: 3em;
+}
+
+
+
+
+/* --- Principal >> Postagens principais --- */
+#posts-principais {
+  padding-top: 1.5em;
+}
+
+#posts-principais h1 {
+  margin-bottom: 1em;
+}
+
+#posts-principais .post {
+  width: 40%;
+  max-width: 400px;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  display: inline-block;
+}
+
+#posts-principais .post .titulo {
+  text-shadow: 1px 1px black;
+}
+
+#posts-principais .post img {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  border: 6px solid white;
+  margin-bottom: .5em;
+}
+
+
+
+
+/* --- Principal >> Últimas postagens --- */
+#ultimas-postagens {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+#ultimas-postagens .post {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#ultimas-postagens .post .data-horario {
+  background-color: white;
+  color: #333;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 3px;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+#ultimas-postagens .titulo {
+  font-size: 16px;
+  line-height: 22px;
+  display: inline-block;
+}
+
+
+
+
+/* --- Principal >> Nuvem de tags --- */
+#tags {
+  float: right;
+  width: 300px;
+  padding: 15px;
+  background-color: black;
+  background-image: url(imgs/mula.webp);
+  background-repeat: no-repeat;
+  background-size: 300px;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#tags h1 {
+  margin-bottom: 1em;
+  text-shadow: 2px 2px #000;
+}
+
+.tag-1,
+.tag-2,
+.tag-3 {
+  display: inline-block;
+  border-radius: 2px;
+  padding: 2px 4px;
+  margin: 2px;
+  background-color: orange;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.tag-2 {
+  font-size: 125%;
+}
+
+.tag-3 {
+  font-size: 150%;
+}
+
+
+
+
+
+/* --- Rodapé --- */
+#rodape {
+  background-color: rgba(0, 0, 0, .7);
+  padding: 1em;
+  display: flex;
+}
+
+#rodape .logo-rodape {
+  margin-right: 2em;
+}
+
+
+
+
+
+/* --- Vídeo --- */
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  pointer-events: none;
+  transition: opacity 1s linear;
+  opacity: 1;
+  visibility: visible;
+}
+
+.desaparecido {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.backdrop video {
+  width: 100%;
+}
+
+.backdrop.desaparecido + #unmute {
+  display: none;
+}
+
+#unmute {
+  position: absolute;
+  left: calc(50% - 0.75em);
+  top: calc(50% - 0.75em);
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  background-color: rgba(255, 255, 255, .15);
+  color: black;
+  font-size: 2.5rem;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1em;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+}
+
+#unmute:hover {
+  color: white;
+}
+
+#unmute:active {
+  color: black;
+  transform: translate(1px, 1px);
+}
+
+#unmute:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0 4px yellow;
+}
+
+#unmute:active:focus {
+  color: black;
+  border-color: currentColor;
+  box-shadow: none;
+}
