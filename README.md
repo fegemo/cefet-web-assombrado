@@ -286,4 +286,4 @@ rolagem. Isso pode ser feito facilmente com o posicionamento `sticky`.
 [pseudo-coisas]: https://fegemo.github.io/cefet-web/classes/html4/#pseudo-classes-e-pseudo-elements
 [propriedade-position]: https://fegemo.github.io/cefet-web/classes/css2/#valores-position
 [slides-box-model]: https://fegemo.github.io/cefet-web/classes/html4/#o-box-model
-[entrada-e-botoes]: http://localhost:8080/classes/html4/#elementos-de-entrada-e-botoes
+[entrada-e-botoes]: https://fegemo.github.io/cefet-web/classes/html4/#elementos-de-entrada-e-botoes
