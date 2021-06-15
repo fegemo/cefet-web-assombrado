@@ -1,10 +1,10 @@
 // CURIOSO VOCÊ, HEIN?? Isso é ótimo!
 // Já que está aqui, (a) tente alterar os três parâmetros abaixo
 // e ver o resultado
-// e também (b) procure pela palavra 'click' neste arquivo e a substitua
+// e também (b) procure pela palavra 'mouseenter' neste arquivo e a substitua
 // por 'mouseenter'. Veja no que dá!
 //
-const DISTANCIA_PERCORRIDA_MAXIMA = 80; // em px
+const DISTANCIA_PERCORRIDA_MAXIMA = 100; // em px
 const TEMPO_PARA_MUDAR_DE_LADO = 250;   // em ms (milissegundos)
 const DURACAO_DO_MOVIMENTO = 500;       // idem
 
@@ -33,7 +33,7 @@ boos.forEach(booEl => {
   booEl.style.cursor = 'pointer';
 
   // quando este boo for clicado...
-  booEl.addEventListener('click', e => {
+  booEl.addEventListener('mouseenter', e => {
     let booEl = e.currentTarget;
     // largura e altura máximas até onde ele pode ir
     let larguraDisponivelNaPagina = document.body.clientWidth;
