@@ -98,10 +98,10 @@
       </section>
       <img class="boo" style="right: 60%; top:13%" src="imgs/boo1.gif">
       <img class="boo" style="right: 65%; top:77%" src="imgs/boo2.gif">
-      <img class="boo" style="right: 5%; top:105%;" src="imgs/boo3.gif">
+      <img class="boo" style="right: 5%; top:90%;" src="imgs/boo3.gif">
     </main>
 
-    <footer>
+    <footer class="desaparecido">
       <img class="logo-rodape" src="imgs/logo-assombrado.png" alt="Logo do canal do Youtube Assombrado composto por uma letra A dentro de um círculo e os dizeres 'O desconhecido levado a sério'">
       <div>
         <p class="texto-rodape">
@@ -145,6 +145,7 @@
         document.querySelector('.backdrop').classList.add('desaparecido');
         // faz o conteúdo principal surgir, retirando a classe .desaparecido
         document.querySelector('main').classList.remove('desaparecido');
+        document.querySelector('footer').classList.remove('desaparecido');
       }, TEMPO);
 
 
