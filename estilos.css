@@ -6,7 +6,8 @@ body {
   font-family: monospace;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
 }
 
@@ -40,29 +41,32 @@ a:active {
   color: red;
 }
 
-
 /* --- Cabeçalho --- */
-#cabecalho {
-  background-color: rgba(0, 0, 0, .95);
-  box-shadow: 2px 10px 10px rgba(0,0,0, .25);
+header {
+  background-color: rgba(0, 0, 0, 0.95);
+  box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.25);
   padding-top: 1em;
   text-align: center;
 }
 
-#cabecalho ul {
+header ul {
   background-color: rgba(0, 204, 147, 0.53);
 }
 
-#cabecalho a {
+header a {
   text-decoration: none;
   text-shadow: 1px 1px black;
 }
 
-#menu-de-navegacao ul {
+nav ul {
+  height: 50px;
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   margin-bottom: 0;
 }
-
-
 
 /* --- Conteúdo principal da página --- */
 #conteudo-principal {
@@ -71,19 +75,16 @@ a:active {
   padding-bottom: 3em;
 }
 
-
-
-
 /* --- Principal >> Postagens principais --- */
-#posts-principais {
+.posts-principais {
   padding-top: 1.5em;
 }
 
-#posts-principais h1 {
+.posts-principais h1 {
   margin-bottom: 1em;
 }
 
-#posts-principais .post {
+.posts-principais .post {
   width: 40%;
   max-width: 400px;
   margin-left: 2.5%;
@@ -91,33 +92,30 @@ a:active {
   display: inline-block;
 }
 
-#posts-principais .post .titulo {
+.posts-principais .post .titulo {
   text-shadow: 1px 1px black;
 }
 
-#posts-principais .post img {
+.posts-principais .post img {
   width: 100%;
   max-width: 400px;
   box-sizing: border-box;
   border: 6px solid white;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
-
-
-
 /* --- Principal >> Últimas postagens --- */
-#ultimas-postagens {
+.ultimas-postagens {
   margin-top: 3em;
   margin-bottom: 1em;
 }
 
-#ultimas-postagens .post {
+.ultimas-postagens .post {
   margin-top: 1em;
   margin-bottom: 1em;
 }
 
-#ultimas-postagens .post .data-horario {
+.ultimas-postagens .post .data-horario {
   background-color: white;
   color: #333;
   border: 1px solid black;
@@ -127,18 +125,19 @@ a:active {
   margin-right: 1em;
 }
 
-#ultimas-postagens .titulo {
+.ultimas-postagens .titulo {
   font-size: 16px;
   line-height: 22px;
   display: inline-block;
 }
 
-
-
-
 /* --- Principal >> Nuvem de tags --- */
-#tags {
+aside {
   float: right;
+  text-align: center;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
   width: 300px;
   padding: 15px;
   background-color: black;
@@ -149,9 +148,19 @@ a:active {
   text-align: center;
 }
 
-#tags h1 {
+aside h1 {
   margin-bottom: 1em;
   text-shadow: 2px 2px #000;
+}
+
+mark:active {
+  position: relative;
+  top: -2px;
+  left: -2px;
+}
+
+mark:hover {
+  cursor: pointer;
 }
 
 .tag-1,
@@ -174,24 +183,20 @@ a:active {
   font-size: 150%;
 }
 
-
-
-
-
 /* --- Rodapé --- */
-#rodape {
-  background-color: rgba(0, 0, 0, .7);
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 1em;
   display: flex;
 }
 
-#rodape .logo-rodape {
-  margin-right: 2em;
+form {
+  font-size: 16px;
 }
 
-
-
-
+footer .logo-rodape {
+  margin-right: 2em;
+}
 
 /* --- Vídeo --- */
 .backdrop {
@@ -226,7 +231,7 @@ a:active {
   top: calc(50% - 0.75em);
   border-radius: 50%;
   border: 2px solid currentColor;
-  background-color: rgba(255, 255, 255, .15);
+  background-color: rgba(255, 255, 255, 0.15);
   color: black;
   font-size: 2.5rem;
   width: 1.5em;
@@ -235,8 +240,8 @@ a:active {
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, .15);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
 #unmute:hover {
@@ -258,4 +263,56 @@ a:active {
   color: black;
   border-color: currentColor;
   box-shadow: none;
+}
+
+.boo1 {
+  position: fixed;
+  height: 50px;
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.boo2 {
+  position: fixed;
+  height: 50px;
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.boo3 {
+  position: fixed;
+  height: 50px;
+  opacity: 0.2;
+  transition: 0.5s;
+}
+
+.boo1:hover {
+  height: 100px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.boo2:hover {
+  height: 100px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.boo3:hover {
+  height: 100px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.boo1 {
+  top: 2rem;
+}
+
+.boo2 {
+  bottom: 6rem;
+  right: 3rem;
+}
+
+.boo3 {
+  left: 5rem;
 }
